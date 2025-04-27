@@ -9,8 +9,8 @@ load_dotenv()
 # Configure Azure OpenAI
 client = openai.AzureOpenAI(
     api_key=os.getenv("OPENAI_API_KEY"),
-    api_version="2024-08-01-preview",
-    azure_endpoint="https://aistudioeytrai8084113755.cognitiveservices.azure.com",
+    api_version=os.getenv("API_VERSION"),
+    azure_endpoint=os.getenv("API_ENDPOINT"),
 )
 
 
@@ -43,7 +43,7 @@ async def parse_user_input(message: str) -> dict:
         """
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-1",
+            model=os.getenv("OPENAI_MODEL"),
             messages=[{"role": "user", "content": prompt}],
         )
         content = response.choices[0].message.content
