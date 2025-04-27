@@ -1,4 +1,15 @@
-# 🌿 AI Health & Wellness Tracker
+<h1 align="center">🌿 AI Health & Wellness Tracker</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+</p>
+
+
 
 An **AI-powered Health & Wellness Tracker** built using **FastAPI (Python)** for the backend and **ReactJS (TypeScript)** for the frontend, powered by **OpenAI GPT-4o** for intelligent parsing and tracking.
 
@@ -32,42 +43,6 @@ This system helps users effortlessly track:
 | Database | MongoDB Atlas |
 | Infra | .env configuration, production logging |
 
----
-
-## 📁 Project Structure
-
-```
-backend/
-  app/
-    controllers/
-      log_controller.py
-    models/
-      daily_log.py
-    services/
-      openai_service.py
-    database/
-      connection.py
-    schemas/
-      user_input.py
-    utils/
-      logger.py
-  main.py
-  .env
-  requirements.txt
-
-frontend/
-  src/
-    components/
-      TrackerForm.tsx
-      TrackerLog.tsx
-    api/
-      api.ts
-    App.tsx
-  tailwind.config.js
-  index.css
-  vite.config.ts
-  .env
-```
 
 ---
 
@@ -169,12 +144,3 @@ This project is licensed under the [MIT License](LICENSE).
 > Built with 💖 to make daily health tracking easier and smarter!
 
 ---
-
----
-
-# ✨ Would you like me to also prepare:
-- A **fancy GitHub badge section** (Tech badges, Made with FastAPI, etc.)?
-- Or a **sample LICENSE file** to go with it?
-
-🚀 Let’s polish it fully if you want!  
-Want me to? 🎯
