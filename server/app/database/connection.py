@@ -1,9 +1,8 @@
 import motor.motor_asyncio
-import os
+from app.utils.settings import MONGO_URL
 from dotenv import load_dotenv
 
 load_dotenv()
 
-MONGO_URL = os.getenv("MONGO_URL")
 client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_URL)
 db = client.health_tracker
